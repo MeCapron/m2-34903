@@ -1,0 +1,26 @@
+{
+    "name": "m2test/customer-ext",
+    "description": "Adeo Cookie module",
+    "require": {
+        "php": "^7.2",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "symfony/http-foundation": "^5.2"
+    },
+    "type": "magento2-module",
+    "version": "2.0.14",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "M2test\\CustomerExt\\": ""
+        }
+    }
+}
